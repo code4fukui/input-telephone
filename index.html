@@ -2,13 +2,15 @@
 <title>input-telephone tag demo</title>
 </head><body>
 
-<script type="module" src="./input-telephone.js"></script>
+  <script type="module" src="./input-telephone.js"></script>
+  <script type="module" src="./input-telephone-ext.js"></script>
 
 <h1>input-telephone tag demo</h1>
 
 <div style="display: inline-grid; grid-template-columns: 1fr 1fr 1fr;grid-gap: .5em">
   <div>input-telephone</div><input-telephone id=inp1></input-telephone><div>input-telephone</div>
   <div>input-telephone maxlength=12</div><input-telephone id=inp2 maxlength=12></input-telephone><div>and limit 12 characters</div>
+  <div>input-telephone-ext maxlength=12</div><input-telephone-ext id=inp3 maxlength=12></input-telephone-ext><div>input-telephone-ext</div>
 </div>
 
 <br>
@@ -22,6 +24,9 @@ onload = () => {
   };
   inp2.onchange = () => {
     res.value = inp2.value;
+  };
+  inp3.onchange = () => {
+    res.value = inp3.value;
   };
 };
 </script>
