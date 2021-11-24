@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<script type="module">
+import { InputTelephone } from "./input-telephone.js";
+import { InputTelephoneExt } from "./input-telephone-ext.js";
+
+onload = () => {
+  //const inp = new InputTelephone({ maxlength: 5 }); // ok
+  //const inp = new InputTelephone({ "maxlength": "5" }); // ok
+  const inp = new InputTelephone({ "maxlength": "5", required: "required" }); // ok
+  document.body.appendChild(inp);
+  const inp2 = new InputTelephoneExt({ "maxlength": "5", required: "required" }); // ok
+  document.body.appendChild(inp2);
+};
+</script>
+
+<style>
+.required {
+  background: #fcc;
+}
+</style>
+</html>

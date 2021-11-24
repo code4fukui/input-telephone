@@ -2,8 +2,8 @@ import { TelephoneValidator } from "./TelephoneValidator.js";
 import { InputWithValidator } from "https://code4fukui.github.io/input-number/InputWithValidator.js";
 
 class InputTelephone extends InputWithValidator {
-  constructor() {
-    super(new TelephoneValidator());
+  constructor(opts) {
+    super(new TelephoneValidator(), opts);
   }
 }
 
