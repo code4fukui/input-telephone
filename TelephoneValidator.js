@@ -1,6 +1,6 @@
 import { Validator } from "https://code4fukui.github.io/input-number/Validator.js";
 
-const telephone = "0123456789()+-/ ０１２３４５６７８９（）＋−／　";
+const telephone = "0123456789()+-/ ０１２３４５６７８９（）＋ー／　";
 
 class TelephoneValidator extends Validator {
   isValid(c) {
