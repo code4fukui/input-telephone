@@ -1,5 +1,7 @@
 # input-telephone
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 A web component for input telephone number with validation.
 
 ## Demo
