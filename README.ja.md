@@ -1,16 +1,18 @@
 # input-telephone
 
-A web component for input telephone number with validation.
+入力フィールドにおける電話番号入力を簡単に実装できるWebコンポーネントです。
 
-## Demo
+## デモ
 https://code4fukui.github.io/input-telephone/
 
-## Features
-- Validates input as telephone number
-- Supports Japanese and international telephone number formats
-- Customizable via options
+## 機能
+- 電話番号形式の入力を検証・正規化
+- maxlengthによる入力文字数制限
+- required属性による必須入力
 
-## Usage
+## 使い方
+HTML側の記述例:
+
 ```html
 <script type="module" src="https://code4fukui.github.io/input-telephone/input-telephone.js"></script>
 <input-telephone id=inp maxlength=5></input-telephone>
@@ -24,5 +26,5 @@ onload = () => {
 </script>
 ```
 
-## License
+## ライセンス
 MIT License
